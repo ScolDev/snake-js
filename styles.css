@@ -1,0 +1,35 @@
+::root {
+  --bgColor: #050508;
+  --text-color: #fff;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  /* place-items: center; */
+  background-color: var(--bgColor);
+  color: var(--text-color);
+  font-family: 'Courier New', Courier, monospace;
+  height: 100vh;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.Header {
+  display: flex;
+  justify-content: center;
+}
+
+.Game {
+  position: relative;
+  /* height: 100%; */
+  width: 100%;
+}
